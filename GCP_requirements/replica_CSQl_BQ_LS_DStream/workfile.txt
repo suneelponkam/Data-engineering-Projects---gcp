@@ -1,7 +1,30 @@
-Description : 
+Description : Creating the replication of the data from the CloudSQL database to BigQuery using the DataStream (streaming data)
 
 Services : Google BigQuery , Data Stream , CloudSQL
 
 steps : 
 
 1.  Create a new Instance in the CloudSQl.
+
+1.1 : After the creation of Instance in CloudSQL, we will be able to create the Databases in that instance in various RDBMS as MYSQL,Postgres, Microsoft SQL server etc..
+1.2 : After the creation of Database in CloudSQL instance , we will create a table and load the data (As of now we are loading the data into tables manually)
+
+2. creating the Datastream.
+2.1 : we will create a Datastream with the source and Target details using connectivity configuration (database and BigQuery)
+2.2 : we will configure the Datastream to replicate the data from the database to BigQuery 
+2.3 : the database details, BigQuery dataset details should be provided when configuring the connectivity.
+
+3. After that we will start the Data stream.
+3.1 : the data in the source table will be replicated in the BigQuery( the dataset abd table will be created in the runtime with the provided details in the configuration in data stream).
+3.2 : we will check whether the dataset and the table inside dataset is replicated properly, if the data is reflected or replicated successfully the flow is working successfully.
+
+4. case 2 : we can check whether the flow is active. 
+4.1 : the data in the target table is modifying when any changes are made in the source table.
+
+
+
+
+5: key points
+
+5.1: make sure the CDC (change data capture is enabled or not , if its not enabled, we will get error).
+5.2: the username and password should be properly given.
