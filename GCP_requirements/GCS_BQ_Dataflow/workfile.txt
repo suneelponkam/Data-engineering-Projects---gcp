@@ -1,0 +1,39 @@
+Description : Loading the data from GCS (Text Files) to BigQuery. 
+
+Services : Google BigQuery , Dataflow , Google Cloud Storage , Cloud Composer (For scheduling the Job using Airflow)
+
+steps : 
+
+1. first thing is to Upload the Text or CSV file to the GCS Bucket.
+
+2. then create a function in Javascript format which columns are should be loaded to BigQuery for our requirement purpose.
+
+3. we have to create a JSON file with the Table schema for the BQ table.
+
+4. we have to upload the json and javascript file into the GCS bucket.
+
+5. we have to create a dataset before running the dataflow job, because of the dataset won't be created in runtime only the table is created.
+
+6. after all are ablove steps are completed we hav eto capture certain parameters for the dataflow job creation, as like 
+    parameters :
+    -- Javascript UDF path in the GCS.
+    -- JSON file path in the GCS.
+    -- BigQuery dataset name.
+    -- BigQuery table name should be given as project.dataset.tableName in the dataflow (we dont have to create a table in bigQuery it will be created in the runtime)
+    -- source file path in GCS.
+
+7. we can give the Temp location for the job , it will be gcs bucket (wecan give the same bucket if we want withextension of Temp at the last)
+
+8. with all the parameters are added we will be able to run and check the dataset in BigQuery, that the data is loaded or not into the table.
+
+
+files : 
+    -- Javascript UDF file -  udf.js
+    -- JSON file   - BigQuery.json
+    -- source file  - user.csv
+
+
+
+9. we can use the cloud composer to manage the dataflow creation by automatically using the composer managed Airflow.
+
+-- dag file >> function.py
