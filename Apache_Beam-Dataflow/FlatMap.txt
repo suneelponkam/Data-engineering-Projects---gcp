@@ -1,0 +1,17 @@
+stop_words = {'and', 'the', 'is', 'in', 'it', 'of'}
+
+def split_and_clean(text):
+    words = text.split()
+    for word in words:
+        cleaned_word = word.lower().strip(",.!?")
+        if cleaned_word not in stop_words:
+            yield cleaned_word
+
+with beam.Pipeline() as pipeline:
+    (
+        pipeline
+        | 'ReadText' >> beam.io.ReadFromText('/content/input/GCPSV.txt')
+        | 'SplitAndClean' >> beam.FlatMap(split_and_clean)
+        | 'WriteWords' >> beam.io.WriteToText('/content/processed')
+    )
+p1.run()
