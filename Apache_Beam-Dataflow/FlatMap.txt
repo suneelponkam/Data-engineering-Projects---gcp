@@ -25,6 +25,7 @@ with beam.Pipeline() as pipeline:
         pipeline
         | 'ReadText' >> beam.io.ReadFromText('/content/input/GCPSV.txt')
         | 'SplitAndClean' >> beam.FlatMap(split_and_clean)
+        | 'CountHashtags' >> beam.combiners.Count.PerElement()
         | 'WriteWords' >> beam.io.WriteToText('/content/processed')
     )
 p1.run()
