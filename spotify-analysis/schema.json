@@ -1,0 +1,39 @@
+{
+    "BigQuery Schema":[
+    {
+      "name": "Rank",
+      "mode": "NULLABLE",
+      "type": "INTEGER",
+      "description": "",
+      "fields": []
+    },
+    {
+      "name": "Singer",
+      "mode": "NULLABLE",
+      "type": "STRING",
+      "description": "",
+      "fields": []
+    },
+    {
+      "name": "Song",
+      "mode": "NULLABLE",
+      "type": "STRING",
+      "description": "",
+      "fields": []
+    },
+    {
+      "name": "Country",
+      "mode": "NULLABLE",
+      "type": "STRING",
+      "description": "",
+      "fields": []
+    },
+    {
+      "name": "Streams",
+      "mode": "NULLABLE",
+      "type": "INTEGER",
+      "description": "",
+      "fields": []
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+field name	mode	type	description
+record_id		STRING	
+raw_data		STRING	
+error_reason		STRING	
+error_details		STRING	
+processing_stage		STRING	
+error_timestamp		TIMESTAMP	
+source_table		STRING	
+dataflow_job_id		STRING	
+failed_field		STRING	
+RawContent		STRING	
+ErrorMsg		STRING	

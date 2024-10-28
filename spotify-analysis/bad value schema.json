@@ -1,0 +1,79 @@
+[
+    {
+      "name": "record_id",
+      "mode": "",
+      "type": "STRING",
+      "description": "",
+      "fields": []
+    },
+    {
+      "name": "raw_data",
+      "mode": "",
+      "type": "STRING",
+      "description": "",
+      "fields": []
+    },
+    {
+      "name": "error_reason",
+      "mode": "",
+      "type": "STRING",
+      "description": "",
+      "fields": []
+    },
+    {
+      "name": "error_details",
+      "mode": "",
+      "type": "STRING",
+      "description": "",
+      "fields": []
+    },
+    {
+      "name": "processing_stage",
+      "mode": "",
+      "type": "STRING",
+      "description": "",
+      "fields": []
+    },
+    {
+      "name": "error_timestamp",
+      "mode": "",
+      "type": "TIMESTAMP",
+      "description": "",
+      "fields": []
+    },
+    {
+      "name": "source_table",
+      "mode": "",
+      "type": "STRING",
+      "description": "",
+      "fields": []
+    },
+    {
+      "name": "dataflow_job_id",
+      "mode": "",
+      "type": "STRING",
+      "description": "",
+      "fields": []
+    },
+    {
+      "name": "failed_field",
+      "mode": "",
+      "type": "STRING",
+      "description": "",
+      "fields": []
+    },
+    {
+      "name": "RawContent",
+      "mode": "",
+      "type": "STRING",
+      "description": "",
+      "fields": []
+    },
+    {
+      "name": "ErrorMsg",
+      "mode": "",
+      "type": "STRING",
+      "description": "",
+      "fields": []
+    }
+  ]
