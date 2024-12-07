@@ -1,0 +1,15 @@
+Key Parameters for BigQuery Output :
+output_table: Specifies the destination BigQuery table in the format:
+
+makefile
+Copy code
+project_id:dataset.table_name
+write_disposition: Determines how the data is written to the table:
+
+WRITE_APPEND: Appends data to the existing table.
+WRITE_TRUNCATE: Overwrites the table with new data.
+WRITE_EMPTY: Fails the job if the table already exists.
+temp_location: A temporary storage bucket is required for Dataflow to process the data before writing it to BigQuery.
+
+4. Preparing Your BigQuery Table
+Ensure the target BigQuery table exists, or configure your Dataflow job to create it automatically if necessary. You can predefine the schema or allow Dataflow to infer it based on your data.

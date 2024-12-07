@@ -1,0 +1,7 @@
+anime = (
+    p1
+    | "Read from a text file" >> beam.io.ReadFromText('/content/input/sampledata.csv',skip_header_lines=1)
+    | "Split rows" >> beam.Map(lambda row: row.split(','))
+    | "Write to a text file" >> beam.io.WriteToText('/content/output/anime.csv')
+)
+p1.run()
