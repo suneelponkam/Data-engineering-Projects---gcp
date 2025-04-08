@@ -1,0 +1,11 @@
+1: Run the TPT script using the tbuild command:
+
+tbuild -f ExportToCSV.tpt
+
+2: Use the gsutil command to upload files to your GCS bucket:
+
+gsutil cp /path/to/exported_file.csv gs://your_bucket_name/staging/
+
+3: Verify the files in GCS using:
+
+gsutil ls gs://your_bucket_name/staging/
