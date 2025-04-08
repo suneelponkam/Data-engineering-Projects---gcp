@@ -1,6 +1,6 @@
-1.  replica_CSQL_BQ_LS_DStream :
+Requirements :
 
-    --- Description : Creating the replication of the data from the CloudSQL database to BigQuery using the DataStream (streaming data).
-    --- Services : Google BigQuery , Data Stream , CloudSQL.
+Git configure :
 
-2.
+--- git config --global user.email "ponkamsuneel@gmail.com"
+--- git config --global user.name suneel ponkam
