@@ -11,7 +11,7 @@ limit 1 offset 1;
 select salary
 from (
     select salary, dense_rank() over(order by salary) as ranked_salary
-) from employees
+ from employees )
 where ranked_salary = 2;
 
 2. retrieves all employees whose salary is greater than the average salary in the employees table?

@@ -1,4 +1,4 @@
-
+unique : it will returns the diff records only no duplicates 
 
 Rank() - provides a ranking with the gaps if there are ties
 
@@ -25,5 +25,9 @@ Join : Combines columns from multiple tables
 3. truncates the data andkeeps on the schema
 
 [CTE vs Temp tbl]
+
+
+CTE vs Recursive CREATE
+
 
 1.
