@@ -1,0 +1,53 @@
+🔁 Duplicate Handling
+
+Remove Duplicates from a List
+→ Keep order or use set depending on the requirement.
+Find the First Duplicate Element
+→ Return the first element that repeats.
+Find All Duplicates in a List
+→ Return list of elements that appear more than once.
+Check if a List Has Duplicates
+→ Return True if any item appears more than once.
+Remove All Occurrences of Duplicates
+→ Only keep items that appear once.
+
+🔍 Search and Match
+
+Check if Two Lists Have Common Elements
+→ Intersection logic using set.
+Find All Pairs with a Given Sum
+→ Classic two-pointer/hash set problem.
+Find Indices of a Target Element
+→ Return list of indices where element appears
+Find the Most Frequent Element in a List
+Find the First Non-Repeating Element
+
+🔁 Transformations and Filtering
+
+Flatten a Nested List
+→ For example [[1, 2], [3, 4]] → [1, 2, 3, 4]
+Reverse a List Without Using [::-1]
+Split a List into Chunks of N Elements
+Rotate a List (Left or Right Shift)
+Remove All Occurrences of a Specific Value
+Filter Elements Greater Than a Given Value
+Convert a List of Strings to a List of Integers
+Replace All Occurrences of a Value in List
+
+🔢 Sorting and Rearranging
+
+Sort a List Without Using Built-in Sort
+Sort by Frequency of Elements
+Sort List of Tuples by Second Element
+Move All Zeros to End (or Start)
+Partition List by Even and Odd Numbers
+
+💡 Bonus (Intermediate/Advanced)
+
+Find Missing Numbers from a Range in a List
+Find Duplicate and Missing Number (Leetcode style)
+Merge Two Sorted Lists Without Duplicates
+Group Anagrams from a List of Strings
+Find All Subsets or Permutations of a List
+Find the Longest Increasing Subsequence
+Sliding Window Maximum (or Average)

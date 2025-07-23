@@ -1,0 +1,44 @@
+
+python : 
+to create python virtual env :
+
+-- python -m venv venv
+
+-- venv/scripts/activate
+
+-- pip install flask
+
+-- pip install flask google.cloud.storage
+
+the Gcloud ::::
+
+the command to set the login default for the error :
+
+-- google.auth.exceptions.DefaultCredentialsError: Your default credentials were not found.
+
+command : gcloud auth application-default login
+
+other menthod as ssh key :
+
+1. Create/download a service account key (if you don’t have one)
+Go to Google Cloud Console – IAM & Admin > Service Accounts
+
+Select your project.
+
+Click “Create Service Account”
+
+Grant it access (e.g., Storage Admin)
+
+Click Create Key → Choose JSON → Download the file.
+
+terminal :
+-- export GOOGLE_APPLICATION_CREDENTIALS="/full/path/to/your-key.json"
+
+windows CMD:
+-- set GOOGLE_APPLICATION_CREDENTIALS="C:\path\to\your-key.json"
+
+windows powershell :
+--- $env:GOOGLE_APPLICATION_CREDENTIALS="C:\path\to\your-key.json"
+
+
+

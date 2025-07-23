@@ -1,0 +1,22 @@
+
+
+git clone <url>
+
+git config --global user.name "username"
+git config --global user.email "email address"
+
+git init <repo name>
+
+git checkout -b <new_branch name>
+
+git checkout main
+
+git checkput suneelponkam-patch-1
+
+esc , :q! for the exit
+
+git pull origin main
+
+git commit -m "hello changes"
+
+git push
