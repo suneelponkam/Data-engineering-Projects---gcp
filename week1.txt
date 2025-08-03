@@ -1,0 +1,51 @@
+📌 Week 1: GCP Fundamentals + Google Cloud Storage (GCS)
+✅ Key Topics to Learn
+GCP Structure:
+
+Understand Projects, Billing Accounts, Organizations, and Folders.
+
+Learn how IAM (Identity and Access Management) works with these.
+
+IAM Basics:
+
+Roles: Basic, Predefined, Custom
+
+Members: Google accounts, service accounts
+
+Policy Binding: How permissions are assigned
+
+Google Cloud Storage:
+
+Buckets: Types (Standard, Nearline, Coldline, Archive)
+
+Object lifecycle rules
+
+Versioning: Enable and manage object versions
+
+Permissions on buckets/objects
+
+🛠️ Tools / Skills to Practice
+GCP Console
+
+gsutil CLI
+
+IAM role assignment (Editor, Storage Admin, Viewer)
+
+GCS bucket creation with versioning
+
+🧪 Mini Project
+Create a GCP project or use an existing one.
+
+Create a GCS bucket with versioning enabled.
+
+Upload a CSV file (e.g., sample user data).
+
+Upload an updated version of the same file.
+
+Use gsutil or Console to check version history.
+
+Assign IAM roles to:
+
+One user with Viewer permission
+
+One user with Storage Admin permission
